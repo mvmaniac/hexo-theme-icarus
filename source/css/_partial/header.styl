@@ -1,11 +1,11 @@
 #header
     @extend $block
-    background: white
+    background: #0000009c
     position: relative
     a, a:visited
         white-space: nowrap
         transition: 0.2s ease
-        color: color-default
+        color: #fff
     a:hover
         color: color-link
 
@@ -127,6 +127,13 @@ $nav-link
     @extend $header-block-right
     .search-form
         position: relative
+        ::placeholder /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: #fff;
+            opacity: 1; /* Firefox */
+        :-ms-input-placeholder /* Internet Explorer 10-11 */
+            color: #fff
+        ::-ms-input-placeholder  /* Microsoft Edge */
+            color: #fff
         .search-form-input
             width: 100%
             padding: 0 30px 0 15px
@@ -149,7 +156,7 @@ $nav-link
             &:before
                 content: '\f002'
             &:hover, &:focus
-                color: #777
+                color: #fff
 
 .search-form-input,
 .search-form-input.ins-search-input,
@@ -194,3 +201,11 @@ $nav-link
             &::-webkit-search-results-decoration
             &::-webkit-search-cancel-button
                 -webkit-appearance: none
+        .search-form
+            ::placeholder /* Chrome, Firefox, Opera, Safari 10.1+ */
+                color: #fff;
+                opacity: 1; /* Firefox */
+            :-ms-input-placeholder /* Internet Explorer 10-11 */
+                color: #fff
+            ::-ms-input-placeholder  /* Microsoft Edge */
+                color: #fff
