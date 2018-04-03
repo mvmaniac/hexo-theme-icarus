@@ -22,6 +22,8 @@ article:
     comments: '댓글'
     share: '공유하기'
     catalogue: '카탈로그'
+    date: "Posted on"
+    updated: "Post modified"
 profile:
     follow: 'GitHub'
     post: '포스트'
