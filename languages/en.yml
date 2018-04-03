@@ -22,6 +22,8 @@ article:
     comments: 'Comments'
     share: 'Share'
     catalogue: 'Catalogue'
+    date: 'Posted on'
+    updated: 'Post modified'
 profile:
     follow: 'FOLLOW'
     post: 'post'

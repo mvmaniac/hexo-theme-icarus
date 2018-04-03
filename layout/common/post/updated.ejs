@@ -1,8 +1,8 @@
 <% if (post.updated) { %>
     <div class="<%= class_name %>">
-        <i class="fa fa-calendar"></i><%= __('article.updated') %>
+        <i class="fa fa-calendar"></i><%= __('article.updated') %> :
         <a href="<%- url_for(post.path) %>">
-            <time datetime="<%= date_xml(post.updated) %>" itemprop="datePublished"><%= date(post.updated, date_format) %></time>
+            <time datetime="<%= date_xml(post.updated) %>" itemprop="datePublished"><%= date(post.updated, 'YYYY-MM-DD HH:mm:ss') %></time>
         </a>
     </div>
 <% } %>
